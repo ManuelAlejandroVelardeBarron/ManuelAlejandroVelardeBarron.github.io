@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: rgb(9, 255, 0);
+    font-size: 20px;
+}
+
+
+/*ESTILOS GENERALES*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    line-height: 3rem;
+    position: relative;
+}
+
+.menu ul {
+    position: absolute;
+}
+
+nav a {
+    color: rgb(9, 255, 0);
+    display: block;
+    padding: 0 2.4em;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+
+/*PRIMER NIVEL*/
+
+.menu {
+    background: #333;
+    display: table;
+    width: 100%;
+}
+
+.menu>li {
+    float: left;
+}
+
+
+/*SEGUNDO NIVEL*/
+
+nav li li {
+    background: #222;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .6s;
+    width: 200px;
+}
+
+nav li:hover>ul>li {
+    max-height: 1000px;
+    overflow: visible;
+}
+
+.menu>li>ul {
+    top: 100%;
+}
+
+
+/*TERCER NIVEL*/
+
+.menu ul ul {
+    left: 100%;
+    top: 0;
+}
+
+h1 {
+    text-align: center;
+}
+#energias{
+    color: rgb(9, 255, 0);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p1{
+color: blue;
+}
+p2{
+color: violet;
+}
+p3{
+color: red;
+}
+p4{
+    color: pink;
+}
+p5{
+    color: cornflowerblue;
+}
+p6{
+    color: green;
+}
+p7{
+    color: lightcoral;
+}
+p8{
+    color: magenta;
+}
+p9{
+    color: mediumturquoise;
+}
+p10{
+    color: darkgreen;
+}
+p11{
+    color: teal;
+}
+p12{
+    color: coral;
+}
+p13{
+    color: dodgerblue;
+}
+p14{
+ color: darkorange;   
+}
+p15{
+    color: beige;
+}

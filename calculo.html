@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo</title>
+    <link rel="stylesheet" type="text/css" href="calculo.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="LogotipoAcolorCetis156.jpg" alt="pt" height="150" width="150">Proyecto Transversal</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a>
+                    <ul>
+                        <li><a href="#">Integrantes</a>
+                            <ul>
+                                <li><a href="#">Velarde.A</a>
+                                    <ul>
+                                        <li>
+                                            <img src="manuel.PNG" alt="Velarde" height="150" width="150">Velarde.A
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Reyes.Y</a>
+                                    <ul>
+                                        <li>
+                                            <img src="yerack.jpg" alt="Reyes.Y" height="150" width="150">Reyes.Y
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Garcia:A</a>
+                                    <ul>
+                                        <li>
+                                            <img src="angel.jpg" alt="Garcia.A" height="150" width="150">Garcia.A
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Bañuelos.C</a>
+                                    <ul>
+                                        <li>
+                                            <img src="christian.jpg" alt="Bañuelos.C" height="150" width="150">Bañuelos.C
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Arenales.R</a>
+                                    <ul>
+                                        <li>
+                                            <img src="rocio.jpg" alt="Arenales.R" height="150" width="150">Arenales.R
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Temas</a>
+                    <ul>
+                        <li><a href="Poyecto Transversal.html">Inicio</a></li>
+                        <li><a href="programacion.html">Programacion</a></li>
+                        <li><a href="ingles.html">Ingles</a></li>
+                        <li><a href="Fisica.html">Fisica</a></li>
+                        <li><a href="ecologia.html">Ecologia</a></li>
+                        <li>
+                            <a href="calculo.html">Calculo.D</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Grafica de los Paises con mayor Energia Renovable<br>Profesora: Guiselle Anahi Ruiz Vargas</h1>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <canvas id="myChart" width="200" height="50"></canvas>
+    <SCRipt>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Iceland', 'Norway', 'Brazil', 'Denmark', 'New Zealand'],
+                datasets: [{
+                    label: '# Porcentajes',
+                    data: [25, 20, 15, 10, 5],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </SCRipt>
+</body>
+</html>

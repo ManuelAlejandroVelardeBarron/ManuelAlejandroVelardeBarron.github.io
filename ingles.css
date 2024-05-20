@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: rgb(255, 0, 212);
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/*ESTILOS GENERALES*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    line-height: 3rem;
+    position: relative;
+}
+
+.menu ul {
+    position: absolute;
+}
+
+nav a {
+    color:  rgb(255, 0, 212);;
+    display: block;
+    padding: 0 2.4em;
+    text-decoration: none;
+    transition: .4s;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+
+/*PRIMER NIVEL*/
+
+.menu {
+    background: #333;
+    display: table;
+    width: 100%;
+}
+
+.menu>li {
+    float: left;
+}
+
+
+/*SEGUNDO NIVEL*/
+
+nav li li {
+    background: #222;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .6s;
+    width: 200px;
+}
+
+nav li:hover>ul>li {
+    max-height: 1000px;
+    overflow: visible;
+}
+
+.menu>li>ul {
+    top: 100%;
+}
+
+
+/*TERCER NIVEL*/
+
+.menu ul ul {
+    left: 100%;
+    top: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color: blueviolet;
+}
+
+p2 {
+    color: aquamarine;
+}
+
+p3 {
+    color: chartreuse;
+}
+
+h2 {
+    color: aqua;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+}

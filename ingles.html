@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingles</title>
+    <link rel="stylesheet" type="text/css" href="ingles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><img src="LogotipoAcolorCetis156.jpg" alt="pt" height="150" width="150">Proyecto Transversal</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a>
+                    <ul>
+                        <li><a href="#">Integrantes</a>
+                            <ul>
+                                <li><a href="#">Velarde.A</a>
+                                    <ul>
+                                        <li>
+                                            <img src="manuel.PNG" alt="Velarde" height="150" width="150">Velarde.A
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Reyes.Y</a>
+                                    <ul>
+                                        <li>
+                                            <img src="yerack.jpg" alt="Reyes.Y" height="150" width="150">Reyes.Y
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Garcia:A</a>
+                                    <ul>
+                                        <li>
+                                            <img src="angel.jpg" alt="Garcia.A" height="150" width="150">Garcia.A
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Bañuelos.C</a>
+                                    <ul>
+                                        <li>
+                                            <img src="christian.jpg" alt="Bañuelos.C" height="150" width="150">Bañuelos.C
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Arenales.R</a>
+                                    <ul>
+                                        <li>
+                                            <img src="rocio.jpg" alt="Arenales.R" height="150" width="150">Arenales.R
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Temas</a>
+                    <ul>
+                        <li><a href="Poyecto Transversal.html">Inicio</a></li>
+                        <li><a href="programacion.html">Programacion</a></li>
+                        <li><a href="ingles.html">Ingles</a></li>
+                        <li><a href="Fisica.html">Fisica</a></li>
+                        <li><a href="ecologia.html">Ecologia</a></li>
+                        <li>
+                            <a href="calculo.html">Calculo.D</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Sustainable English Description<br>Profesora: Maria Eugenia Lopez Ruiz</h1>
+    <p>Sustainable development (also called sustainable development or sustainable development)<br>is a model of societal development that seeks to reconcile economic and industrial needs with social and ecological or environmental balance.<br> Its goal is that economic development does not threaten life on the planet,<br>so that it can be preserved for future generations.</p>
+    <p2>It is a type of development that seeks a balance between three main pillars: economic development, care for the environment and the social development of populations.<br>This balance is known as sustainability and, to achieve this, it seeks to carry out practices such as the responsible and efficient use of resources,<br>the study of the environmental impact of some practices and the search for new forms, applications or technologies.<br>Companies and organizations around the world aim to achieve sustainable development that allows them to meet their economic objective,<br>but without causing harm to the natural or social environment.<br>Many of the States, international organizations</p2>
+    <h2>Lypes of Sustainability</h2>
+    <p3>Economic Sustainability<br><br>Environmental Sustainability<br><br>Social Sustainability</p3>
+    <div class="slider-container">
+        <img src="i1.jpg" alt="Imagen 1" width="150" height="150">
+        <img src="i2.jpg" alt="Imagen 2" width="150" height="150">
+        <img src="i3.jpg" alt="Imagen 3" width="150" height="150">
+        <img src="i4.jpg" alt="Imagen 4" width="150" height="150">
+        <img src="i5.jpg" alt="Imagen 5" width="150" height="150">
+        <img src="i6.jpg" alt="Imagen 6" width="150" height="150">
+    </div>
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slider img');
+
+        let currentIndex = 0;
+        const slideWidth = slides[0].clientWidth;
+
+        function nextSlide() {
+            if (currentIndex >= slides.length - 1) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+            updateSlide();
+        }
+
+        function updateSlide() {
+            slider.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+        }
+
+        setInterval(nextSlide,3000);
+    </script>
+</body>
+</html>
