@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculo</title>
-    <link rel="stylesheet" type="text/css" href="calculo.css">
+    <title>contacto y climas</title>
+    <link rel="stylesheet" type="text/css" href="contacto.css">
+    
 </head>
-
 <body>
     <header>
-        <h1><img src="LogotipoAcolorCetis156.jpg" alt="pt" height="150" width="150">Proyecto Transversal</h1>
+        <h1>"Proyecto Transversal"<br>Grupo: 4APV</h1>
+            <img id="logo" src="LogotipoAcolorCetis156.jpg" alt="pt" height="150" width="150">
         <nav>
             <ul class="menu">
                 <li><a href="#">Inicio</a>
@@ -75,44 +74,49 @@
             </ul>
         </nav>
     </header>
-    <h1>Grafica de los Paises con mayor Energia Renovable<br>Profesora: Guiselle Anahi Ruiz Vargas</h1>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <canvas id="myChart" width="200" height="50"></canvas>
-    <SCRipt>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Iceland', 'Norway', 'Brazil', 'Denmark', 'New Zealand'],
-                datasets: [{
-                    label: '# Porcentajes',
-                    data: [25, 20, 15, 10, 5],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
+    <h1>Contacto</h1>
+<form action="Ejemplo.php" method="get">
+   <h2>NOMBRE:<input type="text" name="number" size="40"placeholder="NOMBRE COMPLETO"></h2>
+   <h2>Correo electronico:<input type="text" name="email"size="40"placeholder="EMAIL"></h2>
+   <h2>TELEFONO:<input type="text" name="TELEFONO"size="40"placeholder="(664)999-99-99"></h2>
+      <textarea name="COMENTARIO" id="Comentario" cols="19" rows="2"placeholder="Escribe un comentario"></textarea><h2>
+         
+        <input type="Submit" value="Enviar"></input>
+</form>
+        <h2>Clima Tijuana</h2>
+        <img src="clima.jpg" alt="clima" height="150" width="170">
+        <div id="weather"></div>
+    
+        <script>
+           
+            const apiKey = 'e5b6ba975e107669a7f23789d568107a';
+            const city = 'tijuana';
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    
+         
+            async function getWeather() {
+                try {
+                    const response = await fetch(apiUrl);
+                    const data = await response.json();
+    
+                
+                    const { main, weather } = data;
+                    const temperature = main.temp;
+                    const description = weather[0].description;
+    
+                    
+                    const weatherDiv = document.getElementById('weather');
+                    weatherDiv.innerHTML = `<p>Temperatura: ${temperature}°C</p><p>Descripcion: ${description}</p>`;
+                } catch (error) {
+                    console.error('Error fetching weather data:', error);
                 }
             }
-        });
-    </SCRipt>
+    
+          
+            window.onload = getWeather;
+        </script>
+    </body>
+    </html>
+    
 </body>
-
 </html>

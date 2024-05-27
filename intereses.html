@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculo</title>
-    <link rel="stylesheet" type="text/css" href="calculo.css">
+    <title>interese</title>
+    <link rel="stylesheet" type="text/css" href="intereses.css">
 </head>
-
 <body>
     <header>
         <h1><img src="LogotipoAcolorCetis156.jpg" alt="pt" height="150" width="150">Proyecto Transversal</h1>
@@ -62,7 +59,7 @@
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="intereses.html">intereses</a></li>
-                        <li><a href="contacto,clima.html">Informacion</a></li>
+                        <li><a href="contacto,clima.html">Contacto</a></li>
                         <li><a href="programacion.html">Programacion</a></li>
                         <li><a href="ingles.html">Ingles</a></li>
                         <li><a href="Fisica.html">Fisica</a></li>
@@ -75,44 +72,33 @@
             </ul>
         </nav>
     </header>
-    <h1>Grafica de los Paises con mayor Energia Renovable<br>Profesora: Guiselle Anahi Ruiz Vargas</h1>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <canvas id="myChart" width="200" height="50"></canvas>
-    <SCRipt>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['Iceland', 'Norway', 'Brazil', 'Denmark', 'New Zealand'],
-                datasets: [{
-                    label: '# Porcentajes',
-                    data: [25, 20, 15, 10, 5],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </SCRipt>
-</body>
+    <h1>Formato</h1>
+    <div class="conteiner">
 
+    <div class=" columna1">
+        <h1>Integrantes del equipo</h1>
+        <h2>Velarde Barron Manuel Alejandro</h2>
+        <h2>Reyes Zendejas  Yerack Isaim</h2>
+        <h2>Arenales Acosta Rocio</h2>
+        <h2>Bañuelos Carillo Christian Alexander</h2>
+        <h2>Garcia Arana Angel Sebastian</h2>
+    </div>
+    <div class="columna2">
+        <h1>Formaciones</h1>
+        <h2>Velarde (Lider)</h2>
+        <h2>Reyes (Sub Lider)</h2>
+        <h2>Arenales(Apoyo)</h2>
+        <h2>Bañuelos(Apoyo)</h2>
+        <h2>Garcia(Apoyo)</h2>
+    </div>
+    <div class="columna3">
+        <h1>Intereses y Habilidadaes</h1>
+        <h2>Velarde:Se interesa por que siempre esten en un buen trato los integrantes para ver los mejor de ellos, Tiene la habilidad de ser un buen companero y saber trabajar en un buen hambiente</h2>
+        <h2>Reyes: al igual que velarde se interesa en siempre ver lo mejor para todos, Tiene la gran habilidad de siempre ser un gran apoyo para el equipo</h2>
+        <h2>Arenales: Se interesa en brindar informacion, Tiene la habilidad de investigar rapido</h2>
+        <h2>Bañuelos: se interesa en ayudar en lo que puede</h2>
+        <h2>Garcia: se interesa en ayudar y hacer reir. Tiene la habilidad de soltar el estres que rodea al equipo</h2>
+    </div>
+    </div>
+</body>
 </html>
