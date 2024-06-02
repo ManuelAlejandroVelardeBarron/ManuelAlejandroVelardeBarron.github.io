@@ -74,8 +74,286 @@
             </ul>
         </nav>
     </header>
-    <h1>Programacion<br>Profesor: Eduardo Alonso Padilla</h1>
-    <p></p>
+    <h1>Programacion<br><br>> Pagina web con toda la informacion obtenida de las asignaturas<br>Profesor: Eduardo Alonso Padilla</h1>
+    <br>
+    <br>
+    <h1>Grafica de los Paises con mayor Energia Renovable<br>Profesora: Guiselle Anahi Ruiz Vargas</h1>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <canvas id="myChart" width="200" height="50"></canvas>
+    <SCRipt>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Iceland', 'Norway', 'Brazil', 'Denmark', 'New Zealand'],
+                datasets: [{
+                    label: '# Porcentajes',
+                    data: [25, 20, 15, 10, 5],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </SCRipt>
+     <h1>Sustainable English Description<br>Profesora: Maria Eugenia Lopez Ruiz</h1>
+     <p>Sustainable development (also called sustainable development or sustainable development)<br>is a model of societal development that seeks to reconcile economic and industrial needs with social and ecological or environmental balance.<br> Its goal is that economic development does not threaten life on the planet,<br>so that it can be preserved for future generations.</p>
+     <p2>It is a type of development that seeks a balance between three main pillars: economic development, care for the environment and the social development of populations.<br>This balance is known as sustainability and, to achieve this, it seeks to carry out practices such as the responsible and efficient use of resources,<br>the study of the environmental impact of some practices and the search for new forms, applications or technologies.<br>Companies and organizations around the world aim to achieve sustainable development that allows them to meet their economic objective,<br>but without causing harm to the natural or social environment.<br>Many of the States, international organizations</p2>
+     <h2>Lypes of Sustainability</h2>
+     <p3>Economic Sustainability<br><br>Environmental Sustainability<br><br>Social Sustainability</p3>
+     <div class="slider-container">
+         <img src="i1.jpg" alt="Imagen 1" width="150" height="150">
+         <img src="i2.jpg" alt="Imagen 2" width="150" height="150">
+         <img src="i3.jpg" alt="Imagen 3" width="150" height="150">
+         <img src="i4.jpg" alt="Imagen 4" width="150" height="150">
+         <img src="i5.jpg" alt="Imagen 5" width="150" height="150">
+         <img src="i6.jpg" alt="Imagen 6" width="150" height="150">
+     </div>
+     <script>
+         const slider = document.querySelector('.slider');
+         const slides = document.querySelectorAll('.slider img');
+ 
+         let currentIndex = 0;
+         const slideWidth = slides[0].clientWidth;
+ 
+         function nextSlide() {
+             if (currentIndex >= slides.length - 1) {
+                 currentIndex = 0;
+             } else {
+                 currentIndex++;
+             }
+             updateSlide();
+         }
+ 
+         function updateSlide() {
+             slider.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+         }
+ 
+         setInterval(nextSlide,3000);
+     </script>
+         <h1>"Tipos de Energias"<br>Profesor: Eduardo Salazar Salinas</h1>
+         <div id="energias">
+         <p1>Energía mecánica:<br>Este tipo de energía se asocia al movimiento y la posición de un objeto normalmente en algún campo de fuerza (por ejemplo, el campo gravitatorio). Se suele dividir en transitoria y almacenada.La energía transitoria es la energía en movimiento, es decir, la energía que se transfiere de un lugar a otro. La energía almacenada es la energía contenida dentro de una sustancia u objeto.  La energía mecánica se genera a través de distintos procesos, como la combustión de combustibles fósiles en un motor de combustión interna, la conversión de energía eléctrica en energía cinética en un motor eléctrico, o la transformación de energía potencial en energía cinética al soltar un objeto desde una altura</p1>
+         <br>
+         <br>
+         <img src="mecanica.jpg" alt="mecanica">
+         <br>
+         <br>
+         <p2> Energía cinética:<br>Es un tipo de energía mecánica, que se se asocia a los cueros que están en movimiento. Si no se mueve, no posee energía cinética. Depende de la masa y de la velocidad del cuerpo, es decir, cuanto más pesada es una cosa, y cuanto más rápido se mueve, más energía cinética tiene. Puede transferirse de un objeto a otro cuando los dos cuerpos se golpean. El viento al mover las aspas de un molino es energía cinética.Esta energía se genera cada vez que un objeto se desplaza a través del espacio. Todo objeto que se mueve, desde una gota de lluvia hasta una nave espacial, posee energía cinética. Esta energía varía dependiendo de la masa del objeto y de su velocidad. </p2>
+         <br>
+         <br>
+         <img src="cinetica.jpg" alt="cinetica">
+         <br>
+         <br>
+         <p3>Energía potencial:<br>La energía potencial también es un tipo de energía mecánica, concretamente la energía almacenada. Para entender la diferencia entre la energía cinética y la potencial. energía potencial eléctrica resulta de la fuerza eléctrica. Cuando se juntan dos o más cuerpos cargados eléctricamente, aparecen fuerzas eléctricas entre ellos que los atraen o los repelen. En consecuencia, los cuerpos ganan o pierden energía potencial eléctrica.</p3>
+         <br>
+         <br>
+         <img src="potencial.jpg" alt="">
+         <br>
+         <br>
+         <p4> Energía gravitacional:<br>También es importante comprender la diferencia entre energía potencial y la energía gravitatoria. Cada objeto puede tener energía potencial pero la energía gravitacional se almacena solamente en la altura del objeto. Cada vez que un objeto pesado se mantiene alto, una fuerza o poder es probable que lo mantenga en equilibrio para que no caiga.La energía gravitatoria o energía potencial gravitatoria (o gravitacional) es la energía potencial que tiene un objeto masivo en relación con otro objeto masivo debido a la gravedad. Es la energía potencial asociada al campo gravitacional, que se libera (convierte en energía cinética) cuando los objetos caen uno hacia el otro.</p4>
+         <br>
+         <br>
+         <img src="gravitacional.jpg" alt="">
+         <br>
+         <br>
+         <p5>Energía sonora o acústica:<br>La música no solamente nos hace bailar, sino que el sonido también contiene energía. De hecho, el sonido es el movimiento de la energía a través de sustancias en ondas longitudinales. El sonido se produce cuando una fuerza hace que un objeto o sustancia vibre y, por tanto, la energía se transfiere a través de la sustancia en una onda. La energía sonora se produce a partir de la vibración de las partículas que componen cualquier objeto. Por eso, las propiedades del material y las partículas que lo compongan determinarán el sonido que este genere. Así, objetos muy densos como los metales no producen el mismo tipo de sonido que la arena o la madera.</p5>
+         <br>
+         <br>
+         <img src="sonora.jpg" alt="">
+         <br>
+         <br>
+         <p6> Energía eléctrica:<br>La materia está formada por átomos, que están compuestos por electrones que se mueven constantemente. El movimiento de estos electrones dependen de la cantidad de energía que tiene, que es a lo que me refería con la energía potencial. Los seres humanos pueden provocar que estos electrones se muevan de un lugar a otro con medios especiales (materiales) llamados conductores, que transportar esta energía. No obstante, ciertos materiales no pueden transportar energía en esta forma, y se llaman aisladores. La energía eléctrica es la causada en el interior de los materiales conductores y provoca básicamente tres efectos: luminoso, térmico y magnético. La energía eléctrica es la que llega a nuestras casas y que podemos observar cuando se enciende una bombilla. . La electricidad es la energía generada por el movimiento de electrones en el interior de materiales conductores</p6>
+         <br>
+         <br>
+         <img src="electrica.jpg" alt="">
+         <br>
+         <br>
+         <p7> Energía térmica:<br>La energía térmica se conoce como la energía que proviene de la temperatura de la materia. Cuanto más caliente esta una sustancia, más moléculas vibran y, por lo tanto, mayor es su energía térmica. La energía térmica se produce cuando intervienen procesos calóricos que actúan al entrar dos partes diferentes, que a su vez presentan diferente temperatura, las cuales colisionan entre sí generando la trasmisión cuerpo a cuerpo de las temperaturas</p7>
+         <br>
+         <br>
+         <img src="termica.jpg" alt="">
+         <br>
+         <br>
+         <p8>  Energía química:<br> La energía química es la energía almacenada en los enlaces de los compuestos químicos (átomos y moléculas). Se libera en una reacción química, produciendo a menudo calor (reacción exotérmica). Las baterías, el petróleo, el gas natural y el carbón son ejemplos de energía química almacenada. Normalmente, una vez que la energía química es liberada de una sustancia, esa sustancia se transforma en una sustancia completamente nueva. La energía química se produce a través de reacciones químicas entre moléculas de uno o más compuestos</p8>
+         <br>
+         <br>
+         <img src="quimica.jpg" alt="">
+         <br>
+         <br>
+         <p9> Energía magnética:<br>Es un tipo de energía que se origina en la energía que generan determinados imanes. Estos imanes crean campos magnéticos permanentes y así como energía que se puede utiliza en diferentes sectores. La energía magnética se produce como resultado del movimiento de electrones (carga eléctrica)</p9>
+         <br>
+         <br>
+         <img src="magnetica.jpg" alt="">
+         <br>
+         <br>
+         <p10>Energía nuclear:<br>La energía nuclear es energía resultante de las reacciones nucleares y los cambios en los núcleos atómicos o de las reacciones nucleares. La fisión nuclear y la desintegración nuclear son ejemplos de este tipo de energía. Esta fuente de energía puede producirse de dos maneras: mediante fisión (cuando los núcleos de los átomos se dividen en varias partes) o mediante fusión (cuando estos se fusionan)</p10>
+         <br>
+         <br>
+         <img src="nuclear.jpg" alt="">
+         <br>
+         <br>
+         <p11> Energía radiante:<br>La energía radiante, también conocida como energía electromagnética que poseen las ondas electromagnéticas. Por ejemplo, cualquier forma de luz tiene energía electromagnética, incluyendo partes del espectro que no podemos ver. La radio, los rayos gamma, los rayos X, las microondas y la luz ultravioleta son otros ejemplos de energía electromagnética. Se produce principalmente a través de la radiación solar, donde el sol emite radiación electromagnética en diversas frecuencias, incluyendo luz visible, infrarroja y ultravioleta. Esta radiación es captada por la Tierra y puede ser aprovechada para generar energía eléctrica.</p11>
+         <br>
+         <br>
+         <img src="radiante.jpg" alt="">
+         <br>
+         <br>
+         <p12>  Energía eólica:<br>La energía eólica es un tipo de energía cinética que se obtiene a partir del viento. Se emplea para producir otro tipo de energía, principalmente energía eléctrica. Es un tipo de energía energía renovable, y el principal medio para obtenerla son los “molinos de viento” que pueden variar en su tamaño. </p12>
+         <br>
+         <br>
+         <img src="eolica.jpg" alt="">
+         <br>
+         <br>
+         <p13>  Energía solar:<br>La energía solar también es un tipo de energía renovable, que se obtiene mediante la captación de la luz y el calor emitidos por el Sol. Suelen emplearse paneles solares para su recaptación y existen dos tipos de energía solar: Fotovoltáica: transforma los rayos solares en electricidad mediante el uso de paneles solares. Fototérmica: emplea calor para hacer energía gracias a los colectores solares Termoeléctrica: convierte el calor en energía eléctrica de forma indirecta.</p13>
+         <br>
+         <br>
+         <img src="solar.jpg" alt="">
+         <br>
+         <br>
+         <p14>Energía hidráulica:<br>De nuevo, un tipo de energía renovable, que posee energía potencial gravitatoria y, si se deja caer, también contiene energía cinética, pues emplea el movimiento del agua para producir esta energía.</p14>
+         <br>
+         <br>
+         <img src="hidraulica.jpg" alt="">
+         <br>
+         <br>
+         <p15>  Energía lumínica:<br>Es la energía transportada por la luz, pero no debe confundirse con la energía radiante, puesto que en esta última no todas las longitudes de onda comportan la misma cantidad de energía. La energía luminosa es capaz de broncear o quemar nuestra piel, por lo que puede emplearse, por ejemplo, para fundir metales.</p15>
+         <br>
+         <br>
+         <img src="luminica.jpg" alt="">
+         </div>
+        </header>
+        <h1>Ciudades con Mayor Poblacion y Mayor Sustentabilidad<br>Profesor: Enrique Mora Ruiz</h1>
+        <div class="img">
+        <img src="imagen ecologia.jpg" alt="imagen ecologia">
+    </div>
+        <div class="cs">
+        <table border="1">
+            <thead>
+            <tr>
+            <th bgcolor="turquoise">Ciudades Mas Sustentables</th>
+        
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td bgcolor="turquoise">Londres</td>
+           
+            </tr>
+            <tr>
+            <td bgcolor="turquoise">Nueva York</td>
+         
+            </tr>
+            <tr>
+                <td bgcolor="turquoise">Paris</td>
+      
+            </tr>
+            <tr>
+             <td bgcolor="turquoise">Tokio</td>
+         
+            </tr>
+            <tr>
+                <td bgcolor="turquoise">Berlin</td>
+            
+               </tr>
+               <tr>
+                <td bgcolor="turquoise">Washington</td>
+          
+               </tr>
+               <tr>
+                <td bgcolor="turquoise">Singapur</td>
+       
+               </tr>
+               <tr>
+                <td bgcolor="turquoise">Amsterdam</td>
+             
+               </tr>
+            
+            </tbody>
+            
+            <colgroup>
+            
+            <colstyle="background="red""">
+            
+            <colspan="2" style "background=blue">
+            
+            </colgroup>
+            
+            </table>
+        </div>
+        <div class="cp">
+            <table border="1">
+                <thead>
+                <tr>
+                <th bgcolor="turquoise">Ciudades con mayor poblacion</th>
+                <th bgcolor="turquoise">Poblacion aproximada</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td bgcolor="turquoise">Sao Paulo</td>
+                <td bgcolor="turquoise">22.806.704</td>
+                </tr>
+                <tr>
+                <td bgcolor="turquoise">El Cairo</td>
+                <td bgcolor="turquoise">22.623.874</td>
+                </tr>
+                <tr>
+                    <td bgcolor="turquoise">Ciudad de Mexico</td>
+                <td bgcolor="turquoise">22.505.315</td>
+                </tr>
+                <tr>
+                 <td bgcolor="turquoise">Mumbai</td>
+                <td bgcolor="turquoise">21.673.149</td>
+                </tr>
+                <tr>
+                    <td bgcolor="turquoise">Osaka</td>
+                   <td bgcolor="turquoise">18.967.434</td>
+                   </tr>
+                   <tr>
+                    <td bgcolor="turquoise">Tokio</td>
+                   <td bgcolor="turquoise">37.115.035</td>
+                   </tr>
+                   <tr>
+                    <td bgcolor="turquoise">Nueva Delhi</td>
+                   <td bgcolor="turquoise">33.807.403</td>
+                   </tr>
+                   <tr>
+                    <td bgcolor="turquoise">Pekin</td>
+                   <td bgcolor="turquoise">22.189.082</td>
+                   </tr>
+                
+                </tbody>
+                
+                <colgroup>
+                
+                <colstyle="background="red""">
+                
+                <colspan="2" style "background=blue">
+                
+                </colgroup>
+                
+                </table>
+            </div>
 </body>
 
 </html>
